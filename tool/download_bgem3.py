@@ -1,0 +1,1 @@
+python -c "from FlagEmbedding import BGEM3FlagModel; model = BGEM3FlagModel('E:/model/bge-m3', use_fp16=True); embeddings = model.encode(['测试'])['dense_vecs']; print(f'维度: {embeddings.shape}')"

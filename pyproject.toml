@@ -1,0 +1,43 @@
+[project]
+name = "zhanggui"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "苏深i", email = "2549948952@qq.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "torch>=2.11.0",
+    "torchvision>=0.26.0",
+    "torchaudio>=2.11.0",
+    "colorlog>=6.12.0",
+    "fastapi>=0.142.2",
+    "grandalf>=0.8",
+    "langchain>=1.4.3",
+    "langchain-openai>=1.6.7",
+    "langchain-text-splitters>=1.1.3",
+    "langgraph>=1.2.14",
+    "logging>=0.4.9.6",
+    "minio>=7.2.20",
+    "numpy>=2.4.6",
+    "pymongo>=4.18.2",
+    "python-dotenv>=1.2.4",
+    "pymilvus[model]>=3.0.2",
+    "transformers>=4.57.6",
+    "flagembedding>=1.4.2",
+    "modelscope>=1.40.2",
+    "openai-agents>=0.24.0",
+    "dashscope>=2.0.1",
+    "uvicorn[standard]>=0.54.0",
+]
+
+
+[tool.uv.sources]
+torch = { index = "pytorch-cuda" }
+torchvision = { index = "pytorch-cuda" }
+torchaudio = { index = "pytorch-cuda" }
+
+[[tool.uv.index]]
+name = "pytorch-cuda"
+url = "https://download.pytorch.org/whl/cu128"
+explicit = true
